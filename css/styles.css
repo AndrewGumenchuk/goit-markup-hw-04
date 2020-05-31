@@ -121,17 +121,23 @@ img {
 .contact {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .item {
+  display: flex;
 }
 
 .contact .item + .item {
   margin-left: 30px;
 }
-.contact .item:hover,
-.contact .item:focus {
-  --color5: var(--accent-color);
-}
 
 .contact .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -139,9 +145,14 @@ img {
   letter-spacing: 0.02em;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.contact .link:hover,
+.contact .link:focus {
+  --color5: var(--accent-color);
+}
+
+.link-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Site header */
@@ -419,19 +430,19 @@ button:focus {
 
 .client-block {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+
   width: 170px;
   height: 90px;
-  outline: 1px solid #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .client-block:hover,
 .client-block:focus {
-  outline: 1px solid var(--accent-color);
-}
-
-.client-link:hover,
-.client-link:focus {
-  --color2: var(--accent-color);
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Footer */
